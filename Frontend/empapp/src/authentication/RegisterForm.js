@@ -18,7 +18,7 @@ function RegisterForm() {
     const handleSubmit = async e => {
         e.preventDefault();//prevent the form from submission
         try {
-            await axios.post('https://thanfees.pineappleai.cloud/api/auth/register', { uName, email, password }); //sending the uNmae, email and password to backend register api
+            await axios.post('https://test.pineappleai.cloud/api/auth/register', { uName, email, password }); //sending the uNmae, email and password to backend register api
             alert('User Registered Successfully!!!');
             navigate('/login');//after account created redirect the page to login page
             setUserName(''); //update uName

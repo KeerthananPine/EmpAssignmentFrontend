@@ -76,7 +76,7 @@ function EmpList(props) {
                                 <tr key={emp._id}>
                                     <td>{index + 1}</td>
                                     <td>
-                                        <img src={`https://thanfees.pineappleai.cloud${emp.image}`} alt="Profile" className='rounded-circle' style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
+                                        <img src={`https://test.pineappleai.cloud${emp.image}`} alt="Profile" className='rounded-circle' style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
                                     </td>
                                     <td>{emp.name}</td>
                                     <td>{emp.position}</td>
