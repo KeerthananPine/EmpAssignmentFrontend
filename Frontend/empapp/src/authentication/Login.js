@@ -19,7 +19,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault(); //prevent the form from submission
         try {
-            const res = await axios.post('http://thanfees.pineappleai.cloud/api/auth/login', { email, password }); //sending the email and password to backend login api
+            const res = await axios.post('https://test123.pineappleai.cloud/api/auth/login', { email, password }); //sending the email and password to backend login api
             localStorage.setItem('token', res.data.token); //stroing the token in browser local storage
             dispatch(login({user: res.data.user, token: res.data.token })); //after log in it updated the global state
             navigate('/employees'); //after logged in redirect the page to employee route
