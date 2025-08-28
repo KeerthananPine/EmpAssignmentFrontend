@@ -6,7 +6,7 @@ const initialState = {
     selectedEmp:[]  //stores selected data
 }
 
-const BASE_URL = 'https://test.pineappleai.cloud/api/employee'
+const BASE_URL = 'https://test123.pineappleai.cloud/api/employee'
 
 //GET
 {/*this _ means no argument is expecteed, rejectWithValue is a thunk property */}
