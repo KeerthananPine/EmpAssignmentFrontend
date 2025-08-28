@@ -16,7 +16,7 @@ function Login() {
     const [email, setEmail] = useState(''); //this for store the email 
     const [password, setPassword] = useState('');  //this for store the password 
 
-    const handleSubmit = async (e) => {
+        const handleSubmit = async (e) => {
         e.preventDefault(); //prevent the form from submission
         try {
             const res = await axios.post('https://test123.pineappleai.cloud/api/auth/login', { email, password }); //sending the email and password to backend login api
@@ -26,7 +26,7 @@ function Login() {
         } catch {
             alert('Login failed. Check the Email or Password')
         }
-}
+
 
   return (
 <>

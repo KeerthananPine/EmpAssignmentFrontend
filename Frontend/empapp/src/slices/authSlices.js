@@ -3,6 +3,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const BASE_URL = 'https://test123.pineappleai.cloud/api/auth/'
 
+
 const user = JSON.parse(localStorage.getItem('user')); //gets the user data from browser local storage
 const token = localStorage.getItem('token'); //gets the token from browser local storage
 
@@ -108,3 +109,4 @@ const authSlice = createSlice({
 
 export const { logout, resetAuthState } = authSlice.actions;
 export default authSlice.reducer;
+
